@@ -1,0 +1,50 @@
+{
+  "name": "cc-crisply",
+  "displayName": "Crisply",
+  "version": "0.1.0",
+  "description": "Sharper Claude Code replies: framed code, one-click copy, and Mermaid diagrams, right in your terminal.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "layxdd",
+    "url": "https://github.com/layxdd"
+  },
+  "homepage": "https://github.com/layxdd/cc-crisply#readme",
+  "repository": "https://github.com/layxdd/cc-crisply",
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "code-blocks",
+    "tables",
+    "copy-button",
+    "mermaid",
+    "diagrams",
+    "merman",
+    "terminal",
+    "appearance",
+    "ghostty",
+    "kitty",
+    "iterm2"
+  ],
+  "userConfig": {
+    "diagramDisplay": {
+      "type": "string",
+      "title": "Diagram display",
+      "description": "How Mermaid diagrams are shown: auto (pictures in Ghostty, kitty and iTerm2 3.5+ fullscreen, box-drawing text elsewhere), text (box-drawing text everywhere), or code (the Mermaid source). Needs merman-cli.",
+      "default": "auto",
+      "options": ["auto", "text", "code"]
+    },
+    "diagramTheme": {
+      "type": "string",
+      "title": "Diagram theme",
+      "description": "The diagrams' colors: auto (follow the Claude Code theme, or the terminal's background for its auto theme), dark, or light.",
+      "default": "auto",
+      "options": ["auto", "dark", "light"]
+    },
+    "promptBorder": {
+      "type": "boolean",
+      "title": "Prompt border",
+      "description": "Draw your prompts in the transcript inside a border, on their own background.",
+      "default": true
+    }
+  }
+}

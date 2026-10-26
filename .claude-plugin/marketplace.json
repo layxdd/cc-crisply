@@ -1,0 +1,25 @@
+{
+  "name": "cc-crisply",
+  "owner": {
+    "name": "layxdd",
+    "url": "https://github.com/layxdd"
+  },
+  "description": "Crisply: sharper Claude Code replies, right in your terminal.",
+  "plugins": [
+    {
+      "name": "cc-crisply",
+      "displayName": "Crisply",
+      "source": "./",
+      "description": "Sharper Claude Code replies: framed code, one-click copy, and Mermaid diagrams, right in your terminal.",
+      "category": "appearance",
+      "tags": ["mod", "appearance", "markdown", "code-blocks", "tables", "mermaid", "diagrams"],
+      "relevance": {
+        "topic": "Mermaid diagrams",
+        "signals": {
+          "cli": ["mmdc", "merman"],
+          "filesRead": ["**/*.mmd", "**/*.mermaid"]
+        }
+      }
+    }
+  ]
+}
